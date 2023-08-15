@@ -1,0 +1,199 @@
+{"intents": 
+  [
+	{"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you, Please type correctly."],
+         "context": [""]
+        },
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day","Hii"],
+         "responses": ["Hello! ,What can I do for you?"],
+         "context": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon.,Thank you, see you again."],
+         "context": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""]
+        },
+        {"tag": "options",
+         "patterns": ["How can you help me?", "What can you do?", "What help you provide?", "How you can be helpful?", "What support is offered","Who are you?"],
+         "responses": ["I can be guide you to the medicine that best matches your diseases and symptoms."],
+         "context": [""]
+        },
+        {"tag": "fever",
+         "patterns": ["I am suffering from fever", "I have high body temperature", "I have fever"],
+         "responses": ["Tell me about your symptoms? (Is it only fever or headache and high body temperature"],
+         "context": [""]
+        },
+	{"tag": "symptom",
+         "patterns": ["high body temperature","high temperature","only fever"],
+         "responses": ["Take Paracetamol 3 times a day"],
+         "context": [""]
+        },
+	{"tag": "symptom_fever",
+         "patterns": ["headache and high body temperature","headache and high temperature"],
+         "responses": ["Call the doctor if the fever is accompanied by a severe headache, stiff neck, shortness of breath, or other unusual signs or symptoms. If you're uncomfortable, take acetaminophen (Tylenol, others), ibuprofen (Advil, Motrin IB, others),aspirin or paracetamol."],
+         "context": [""]
+        },
+	{"tag": "pain",
+         "patterns": ["I am suffering from body ache", "My body aches", "I having body ache", "There is pain in my body", "Unpleasant sensation localized to a part of the body", "I have pain in one part of body"],
+         "responses": ["Is it Acute and Mild or Severe?"],
+         "context": [""]
+        },
+	{"tag": "Acute and Mild",
+         "patterns": ["Acute", "Low", "Less", "Mild", "Medium"],
+         "responses": ["For Adults:Paracetamol 500- 100mg every 6-8 hours until pain subsides and For Child:Paracetamol 15 mg/dose 4 to 6 hourly when required,and maximum of 4 doses per 24 hours"],
+         "context": [""]
+        },
+	{"tag": "severe",
+         "patterns": ["severe", "unbarebale"],
+         "responses": ["Call for a doctor or you can take Tramadol tablets or injection 50-100mg every 6 hours or until pain is controlled"],
+         "context": [""]
+        },
+	{"tag": "itching",
+         "patterns": ["My body is itching", "An uncomfortable irritating sensation","I have rashes on my body"],
+         "responses": ["Is it extreme, high or low?"],
+         "context": [""]
+        },
+	{"tag": "very_extreme",
+         "patterns": ["It is extreme","very high","unbarebal","extreme"],
+         "responses": ["You should take an injection of Dexona 1mg or Avil 1mg Injection"],
+         "context": [""]
+        },
+	{"tag": "good",
+         "patterns": ["It's medium","high","uncomfortable"],
+         "responses": ["You should take Allegra 120mg Tablet"],
+         "context": [""]
+        },
+	{"tag": "minimum",
+         "patterns": ["low","normal","little bit"],
+         "responses": [" You should apply Caladryl Lotion on the itching area or Avil Tablet"],
+         "context": [""]
+        },
+	{"tag": "Migrain",
+         "patterns": ["Migrain", "migrain", "What are medicines for migrain?"],
+         "responses": ["Paracetamol 1g immediately then every 4 hours and max 4g per day OR Aspirin 600mg repeat after 4 hours plus Metroclopramide oral/IM, 10 mg 3 times daily"],
+         "context": [""]
+        },
+	{"tag": "Cough",
+         "patterns": ["i have cough", "i am suffering from cough", "I am feeling harsh in neck","cough"],
+         "responses": ["Take cough syrup such as Benadryl Honitus Cough Remedy /Linctus (O) 5-10 ml every 6 hours"],
+         "context": [""]
+        },
+	{"tag": "Acidity",
+         "patterns": ["i have acidity", "i am suffering from acidity", "My stomach is burning","acidity","I am feeling unpleasant in stomach"],
+         "responses": ["You can take antacid such as Digene or tablets such as Pan-40 and for severe you can take DSR tablets. You can also use ENO for mild acidity."],
+         "context": [""]
+        },
+	{"tag": "Loose Motion",
+         "patterns": ["i have loose motion", "i am suffering from loose motion", "My stomach is unwell","loose motion"],
+         "responses": ["You can take ORS(Oral Rehydration Solution) to prevent dehydration plus Antidiarrhoeal drugs such as loperamide or Imodium tablet with intial dose of 4mg followed by 2mg."],
+         "context": [""]
+        },
+	{"tag": "Common Cold",
+         "patterns": ["i am suffering from common cold", "runny nose","sneezing","loss of smell","cold","common cold","stuffy nose"],
+         "responses": ["You can take Sinarest or Lemolate Tablet."],
+         "context": [""]
+        },
+	{"tag": "Weakness",
+         "patterns": ["i am feeling weakness", "There is no energy in my body","tiredness","I am unable to move my body","weakness"],
+         "responses": ["You can take ORS or water with salt. You should eat a healthy diet and consume less caffine."],
+         "context": [""]
+        },
+	{"tag": "Swelling",
+         "patterns": ["There is puffiness in my body", "Swelling","muscle injury swelling"],
+         "responses": ["Motrin or Advil Tablets(Ibuprofen drug) with initial dose of 400 mg. Follow-up doses are 200 mg to 400 mg every 4 hours as needed and maximum of 4 doses in a 24-hour period."],
+         "context": [""]
+        },
+	{"tag": "Cuts",
+         "patterns": ["I am having a cut", "Bleeding", "wound", "cuts"],
+         "responses": ["Antibiotic ointment such as Bacitracin, Neosporin, Polysporin can be applied to help prevent infection and keep the wound moist.","Wash the area gently with soap and water, apply an antibiotic ointment such as Bacitracin, Neosporin, Polysporin, and re-cover with a bandage"],
+         "context": [""]
+        },
+	{"tag": "Constipation",
+         "patterns": ["I am suffering from constipation", "Constipation","Constipation is troubling me", "I'm constipated"],
+         "responses": ["Dulcolax tablets of 5 to 15 mg (1 to 3 tablets) can be taken orally once a day as needed.", " Dulcoflex 5 mg, 1-2 tablets can be used at bedtime"],
+         "context": [""]
+        },
+	{"tag": "Conjunctivites",
+         "patterns": ["I am suffering from Conjunctivitis", "Conjunctivitis","irritation in eye", "pink eye","Redness in eyes","tearing of the eyes"],
+         "responses": ["Ciprofloxacin eye drops and eye ointment are used to treat infections of the eye, such as bacterial conjunctivitis. Doses: For Adults and children 2 years of age and older use 1/2-inch strip of eye ointment in each eye 3 times a day for the first two days, then use 1/2-inch strip of eye ointment in each eye 2 times a day for the next 5 days.","Ofloxacin eye drop can be used. For adults and children 1 year of age and older, Use 1 drop in the affected eye every two to four hours, while you are awake, for two days.Then, use 1 drop in each eye four times a day for up to five more days."],
+         "context": [""]
+        },
+	{"tag": "Thyroid",
+         "patterns": ["I am suffering from Thyroid", "Thyroid","I have Thyroid"],
+         "responses": ["Dulcolax tablets of 5 to 15 mg (1 to 3 tablets) can be taken orally once a day as needed.", " Dulcoflex 5 mg, 1-2 tablets can be used at bedtime"],
+         "context": [""]
+        },
+	{"tag": "Diabetes",
+         "patterns": ["I am suffering from Diabetes", "Diabetes","I have high blood glucose.","I have diabetes"],
+         "responses": ["Metformin (Fortamet, Glumetza, others) is generally the first medication prescribed for type 2 diabetes","Tagon M 20/500mg Tablet 10'STagon M 20/500mg Tablet 15'S can be used to reduce blood sugar"],
+         "context": [""]
+        },
+	{"tag": "Vomiting",
+         "patterns": ["I am suffering from Vomit", "Vomiting","I am vomiting.","Vomiting","Medicines related to Vomiting"],
+         "responses": ["Buscopan 10mg: 0.2 to 0.4mg per day orally.","Pepto-Bismol: 524 mg by mouth every 30 to 60 minutes as needed. Not to exceed 8 doses in 24 hours.","Phenergan 25mg: 6.25 to 12.5 mg per day, before meals."],
+         "context": [""]
+        },
+	{"tag": "Toothache",
+         "patterns": ["I am suffering from Toothache", "Toothache" ,"I am having Toothache", "My tooth hurts","Medicines for Toothache","My tooth pains"],
+         "responses": ["Metamizole 500 mg 3 to 4 times up to a maximum dose of 4000 mg/day.","Propyphenazone 75 to 150 mg tablet orally.","Parvon: 325-650 mg tablets, once in every 4 to 6 hours or 1000 mg tablets once in every 6 to 8 hours","Centrivon 500 mg up to four times a day for 5-7 days"],
+         "context": [""]
+        },
+	{"tag": "Typhoid",
+         "patterns": ["I am suffering from Typhoid", "Typhoid"],
+         "responses": ["Is this what you're experiencing (high fever, headache, stomach pain, weakness, vomiting, and loose stools). Yes or No?"],
+         "context": [""]
+        },
+	{"tag": "Yes",
+         "patterns": ["Yes"],
+         "responses": ["Ciprofloxacin (Cipro)Tablet and Ceftriaxone(Injection) can be used to treat typhoid and  also it's important to rehydrate yourself by drinking adequate water."],
+         "context": [""]
+        },
+	{"tag": "Jaundice",
+         "patterns": ["I am suffering from jaundice","jaundice","I am having Jaundice","Yellowing of Skin"],
+         "responses": ["If these are the Symptoms(Yellowing of the skin and whites of the eyes, Have dark coloured urine and abdominal swelling or expansion) then take Cholestyramine (O) 4-16g daily relieves itching OR Ursodeoxycholic acid (PO) 8-10 mg/kg/day (in 2 or 3 divided doses) "],
+         "context": [""]
+        },
+	{"tag": "Burns",
+         "patterns": ["I am suffering from Burns","Burns","I have burn in my body"],
+         "responses": ["Clean with Normal saline or Chlorhexidine.Apply Gentian Violet solution.Give paracetamol 1000 mg every 8 hours."],
+         "context": [""]
+        },
+	{"tag": "Malaria",
+         "patterns": ["I am suffering from Malaria","Malaria","Medicines for Malaria"],
+         "responses": ["Artemether 20mg, Lumefantrine 120mg can be used to treat malaria"],
+         "context": [""]
+        },
+	{"tag": "Measles",
+         "patterns": ["I am suffering from Measles","Measles","Medicines for Measles","Red rashes all over the body"],
+         "responses": [": Paracetamol tablets 1g every 8 hours for 5 days Plus Vitamin A 200,000 IU orally Plus Tetracycline eye ointment 1% apply once daily for 7 days."],
+         "context": [""]
+        },
+	{"tag": "Chickenpox",
+         "patterns": ["I am suffering from Chicken Pox","Chicken Pox","Medicines for Chicken Pox",""],
+         "responses": ["Aciclovir, IV, 10 mg/kg administrerd over one hour 8 hourly for 7 to 10 days with Paracetamol 1 g every 8 hours plus Calamine lotion with 1% phenol, apply over the whole body every 24 hours"],
+         "context": [""]
+        },
+	{"tag": "Blood Pressure",
+         "patterns": ["I am suffering from Blood Pressure","Blood Pressure","Medicines for blood Pressure","BP"],
+         "responses": ["For Low: You can take Telmikind 20mg Tablet 2 times a day, For Moderate:You can take Telmikind 40mg Tablet 2 times a day and for severe take suggestion from Doctor"],	
+         "context": [""]
+        },
+	{"tag": "Asthma",
+         "patterns": ["I am suffering from Asthma","Asthma","Medicines for Asthma"],
+         "responses": ["If these are the Symptoms (difficulty in breathing, chest pain, cough and wheezing), you can take Salbutamol inhalation. How to use:  Give 2 to 4 puffs every 20 to 30 min up to 10 puffs if necessary during 1st hour. If symptoms completely subside observe for 1 to 4 hrs, give for 24 to 48 hrs (2 to 4 puffs every 4 to 6 hours) for 3 days"],
+         "context": [""]
+        },
+	{"tag": "Covid-19",
+         "patterns": ["I am suffering from Covid-19","Corona","Medicines for Covid","Covid-19","corona virus","fever, cold and triedness","loss of taste or smell","shortness of braeth","Sp02 less than 94"],
+         "responses": ["If these are the Symptoms (fever, cold, triedness, loss of taste or smell,shortness of breath,Sp02 less than 94), then you can take Azithromycin 500mg Tablet once a day, Paracetamol 500mg Tablet 3 times a day and Vitamin C tablet."],
+         "context": [""]
+        }
+   ]
+}
